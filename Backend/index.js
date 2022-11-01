@@ -13,6 +13,6 @@ app.use("/quiz",quizRouter)
 const port = process.env.PORT || 8080;
 
 app.listen(port,async()=>{
-    await connect()
+    await connect();
     console.log('listening on port 8080');
 })
