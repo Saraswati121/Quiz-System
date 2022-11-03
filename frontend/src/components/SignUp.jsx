@@ -19,7 +19,7 @@ export const SignUp = () => {
 
 const handelSubmit =async (e)=>{
 e.preventDefault()
-const url= 'http://localhost:8080/auth/signup'
+const url= 'https://digiquize.herokuapp.com/auth/signup'
 const {data:res} = await axios.post(url,data)
 nav('/login')
 console.log(res.message)

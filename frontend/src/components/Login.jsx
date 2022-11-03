@@ -13,7 +13,7 @@ export const Login = () => {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-			const url = "http://localhost:8080/auth/login";
+			const url = "https://digiquize.herokuapp.com/auth/login";
 			const { data: res } = await axios.post(url, data);
 			localStorage.setItem("token", res.data);
 			window.location = "/quiz";
