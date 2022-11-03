@@ -1,10 +1,10 @@
 import React from 'react'
-import './App.css';
+import { AllRoutes } from './routes/AllRoutes';
 
 function App() {
   return (
     <div className="App">
-      <h1>hlww</h1>
+      <AllRoutes/>
     </div>
   );
 }
